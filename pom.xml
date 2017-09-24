@@ -32,20 +32,6 @@
 </dependency>
   </dependencies>
   <build>
-    <plugins>
-            <plugin>
-                <groupId>org.springframework.plugin</groupId>
-                <artifactId>spring-plugin-core</artifactId>
-                <version>1.2.0.RELEASE</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
     <finalName>nsAssetManagement</finalName>
   </build>
 </project>
