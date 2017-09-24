@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.wgghana</groupId>
   <artifactId>nsAssetManagement</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>nsAssetManagement Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -32,6 +32,19 @@
 </dependency>
   </dependencies>
   <build>
+    <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     <finalName>nsAssetManagement</finalName>
   </build>
 </project>
