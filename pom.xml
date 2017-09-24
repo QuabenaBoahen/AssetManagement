@@ -32,6 +32,20 @@
 </dependency>
   </dependencies>
   <build>
+    <plugins>
+<plugin>
+<!-- Build an executable JAR -->
+<groupId> org.apache.maven.plugins </groupId>
+<artifactId> maven-jar-plugin </artifactId>
+<version> 2.4 </version>
+<configuration>
+<archive>
+<manifest>
+<mainClass> com.wgghana.controller.NavigationController</manifest>
+</archive>
+</configuration>
+</plugin>
+</plugins>
     <finalName>nsAssetManagement</finalName>
   </build>
 </project>
