@@ -34,8 +34,9 @@
   <build>
     <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.springframework.plugin</groupId>
+                <artifactId>spring-plugin-core</artifactId>
+                <version>1.2.0.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>
